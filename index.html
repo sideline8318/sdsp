@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>俄罗斯方块 Tetris</title>
+  <link rel="stylesheet" href="./src/style.css" />
+</head>
+<body>
+  <div class="app">
+    <header class="topbar">
+      <h1 class="title">俄罗斯方块</h1>
+      <span id="version" class="version" aria-label="应用版本">v-</span>
+    </header>
+    <main class="main">
+      <section class="board-wrap">
+        <canvas id="board" width="300" height="600" aria-label="游戏棋盘"></canvas>
+        <div id="overlay" class="overlay hidden" role="status" aria-live="polite">
+          <p id="overlay-text" class="overlay-text"></p>
+          <button id="restart-btn" class="restart-btn" type="button">重新开始 (R)</button>
+        </div>
+      </section>
+      <aside class="sidebar">
+        <div class="panel">
+          <div class="stat"><span class="stat-label">分数</span><span id="score" class="stat-value">0</span></div>
+          <div class="stat"><span class="stat-label">行数</span><span id="lines" class="stat-value">0</span></div>
+          <div class="stat"><span class="stat-label">等级</span><span id="level" class="stat-value">1</span></div>
+        </div>
+        <div class="panel">
+          <div class="panel-title">下一个</div>
+          <canvas id="next" width="120" height="120" aria-label="下一个方块"></canvas>
+        </div>
+        <div class="panel help">
+          <div class="panel-title">操作</div>
+          <ul>
+            <li>← → / A D 移动</li>
+            <li>↑ / W 旋转</li>
+            <li>↓ / S 软降</li>
+            <li>空格 硬降</li>
+            <li>P 暂停</li>
+            <li>R 重开</li>
+          </ul>
+        </div>
+      </aside>
+    </main>
+  </div>
+  <script type="module" src="./src/main.js"></script>
+</body>
+</html>

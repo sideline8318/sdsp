@@ -1,0 +1,17 @@
+{
+  "name": "tetris-web-game",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "description": "俄罗斯方块 Web 小游戏（原生 JS + Canvas）",
+  "scripts": {
+    "dev": "vite --host 0.0.0.0",
+    "build": "vite build",
+    "preview": "vite preview --host 0.0.0.0",
+    "test": "vitest run"
+  },
+  "devDependencies": {
+    "vite": "^5.4.0",
+    "vitest": "^2.1.0"
+  }
+}
