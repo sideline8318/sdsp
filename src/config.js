@@ -2,6 +2,8 @@ export const COLS = 10;
 export const ROWS = 20;
 export const CELL = 30;
 
+export const WORKFLOW_MARKER = '3d3911ab-a583-4ad3-bd2d-f14ff598b98c';
+
 export const EMPTY = null;
 
 export const COLORS = {

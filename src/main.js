@@ -1,4 +1,4 @@
-import { APP_VERSION, APP_COMMIT } from './config.js';
+import { APP_VERSION, APP_COMMIT, WORKFLOW_MARKER } from './config.js';
 import { Game } from './game.js';
 import { Renderer } from './renderer.js';
 import { bindInput } from './input.js';
@@ -21,6 +21,7 @@ function init() {
 
   versionEl.textContent = `v${APP_VERSION} (${APP_COMMIT})`;
   window.__APP_VERSION__ = APP_VERSION;
+  window.__WORKFLOW_MARKER__ = WORKFLOW_MARKER;
 
   function syncHud() {
     const state = game.store.snapshot();
